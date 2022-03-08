@@ -1,0 +1,45 @@
+.NavBar{
+background-color: blue;
+text-align: center;
+
+}
+
+.HomePageSchedule
+{
+    background-color: blue;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+
+}
+
+.helpPanel
+{
+    background-color: blue;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+
+}
+
+.quicklinksPanel
+{
+    background-color: blue;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    right: 50px; 
+}
+
+.PaymentPanel
+{
+    background-color: blue;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+}
+
