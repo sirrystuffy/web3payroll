@@ -1,5 +1,6 @@
 {
-  "name": "web3pay",
+  "homepage": "./",
+  "name": "payroll-eth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
