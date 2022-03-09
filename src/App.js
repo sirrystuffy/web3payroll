@@ -5,7 +5,7 @@ function App() {
   
   return (
     <div>
-      <Home />
+      <Home/>
       <section>
         <button id="connectButton" onClick={initialize} disabled >Connect MetaMask</button>
       </section>
