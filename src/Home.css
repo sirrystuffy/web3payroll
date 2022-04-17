@@ -1,8 +1,4 @@
-.NavBar{
-background-color: blue;
-text-align: center;
 
-}
 
 .HomePageSchedule
 {
@@ -43,3 +39,32 @@ text-align: center;
     right: 50px;
 }
 
+.downloadBtnOne{
+
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.downloadBtnTwo{
+
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.downloadBtnThree{
+
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
