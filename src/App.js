@@ -2,7 +2,6 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Account from "./Account";
 import Timecards from "./Timecards";
-import Employees from "./Employees";
 import {
   BrowserRouter,
   Routes,
