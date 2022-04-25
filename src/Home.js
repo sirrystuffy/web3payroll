@@ -10,15 +10,17 @@ function Home() {
       };
 
     return (
-        <div className='HomeClass'> 
+        <div className='HomeClass' 
+        style={{
+          }}> 
         <Navbar/>
    
         
         <h2 className= 'HomePageSchedule'
-        style=
-        {
-        {width: 700, height: 500}
-        }>
+        style={{
+        width: 700, 
+        height: 500,
+        }}>
             This Week's Schedule
 
             <button className='downloadBtnOne' onClick={saveFile}>Open this week's schedule</button>
