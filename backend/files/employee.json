@@ -1,0 +1,28 @@
+{
+    "employees" : [
+        {
+            "id" : "01", 
+            "firstName" : "Steve", 
+            "lastName" : "Irwin", 
+            "email" : "iloveanimals@mail.com",
+            "phone" : "917 392 9003"
+
+        }, 
+        {
+            "id" : "02", 
+            "firstName" : "Jacob", 
+            "lastName" : "Elordi", 
+            "email" : "handonmyshoulder@mail.com",
+            "phone" : "718 693 2045"
+        }, 
+        {
+            "id" : "03", 
+            "firstName" : "Macaulay", 
+            "lastName" : "Polarstart", 
+            "email" : "superdupercuddlefuzzy@mail.com",
+            "phone" : "123 745 3586"
+        }
+    ]
+    
+    
+}
