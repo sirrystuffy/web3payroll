@@ -1,6 +1,7 @@
 import './Home.css'
 import Navbar from "./Navbar";
 import { saveAs } from "file-saver";
+import React, { Component }  from 'react';
 function Home() {
     const saveFile = () => {
         saveAs(

@@ -1,0 +1,11 @@
+.Navbar{
+    /* background-color: blue; */
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+    font-size: 30px;
+}

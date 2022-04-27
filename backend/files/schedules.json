@@ -1,0 +1,40 @@
+{ "Hours" : 
+    [ 
+    { "Monday": 
+        [
+            { "Start": "0900", "Finish": "1300" },
+            { "Start": "1400", "Finish": "1800" }
+        ]
+    },
+    { "Tuesday":
+        [
+            { "Start": "0900", "Finish": "1300" },
+            { "Start": "1400", "Finish": "1800" }
+        ]
+    },
+    { "Wednesday":
+        [
+            { "Start": "0900", "Finish": "1300" },
+            { "Start": "1400", "Finish": "1800" }
+        ]
+    },
+    { "Thursday":
+        [
+            { "Start": "0900", "Finish": "1300" },
+            { "Start": "1400", "Finish": "1800" }
+        ]
+    },
+    { "Friday":
+        [
+            { "Start": "0900", "Finish": "1300" },
+            { "Start": "1400", "Finish": "1800" }
+        ]
+    },
+    { "Saturday":
+        []
+    },
+    { "Sunday":
+        []
+    }
+]
+}
