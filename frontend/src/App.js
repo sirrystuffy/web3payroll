@@ -27,6 +27,7 @@ function App() {
     <BrowserRouter>
     <section>
         <button id="connectButton" onClick={initialize} disabled>Connect MetaMask</button>
+        {text}
     </section>
     <Routes>
       <Route path="/" element={<Home />} />
@@ -35,7 +36,7 @@ function App() {
       <Route path="timecards" element={<Timecards />} />
     </Routes>
     
-    {text}
+    
   </BrowserRouter>
 
   );
