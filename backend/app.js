@@ -12,6 +12,8 @@ require('dotenv').config();
 
 var db = require('web3.storage'); //requrie(package).property
 
+//Right click files (employee.json and schedules.json), right click, and copy the path.
+//If the path includes backslashes (\), replace those with forward slashes (/).
 let empjson = require('/Users/powerpony/Downloads/CSI499/backend/files/employee.json');
 let sched = require('/Users/powerpony/temp499/React UI/backend/files/schedules.json');
 
