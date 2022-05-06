@@ -1,11 +1,47 @@
-.Navbar{
-    /* background-color: blue; */
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+nav {
+    background-color: darkblue;
+    color: white;
+    height: 5%;
     align-items: center;
-    list-style: none;
-    margin-right: 30px;
+    border-left: none;
+    border-right: none;
     font-size: 30px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.Logo {
+    text-align: left;
+    width: 10%;
+    padding-left: 1%;
+    padding-right: 4%;
+    border-right: 2px solid white;
+}
+
+.Links{ 
+    width: 75%;
+    display: flex;
+    float: left;
+    margin-left: 15%;
+}
+
+
+a{
+    color: white;
+    display: block;
+    background-color: darkblue;
+    text-decoration: none;
+}
+
+
+li{
+    display: inline-block;
+    padding-right: 25%;
+    font-weight: 700;
 }
