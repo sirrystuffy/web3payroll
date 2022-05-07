@@ -1,0 +1,48 @@
+body {
+    background-color: #999999;
+}
+
+
+.AccountClass .InfoPanel {
+    float: left;
+    width: 66%;
+    margin-left: 1%;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    min-height: 600px;
+}
+
+.AccountClass .InfoPanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.AccountClass .HelpPanel {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    min-height: 600px;
+}
+
+.AccountClass .HelpPanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
