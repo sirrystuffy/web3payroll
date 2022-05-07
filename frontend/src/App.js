@@ -25,9 +25,8 @@ function App() {
 
   return (
     <BrowserRouter>
-    <section>
-        <button id="connectButton" onClick={initialize} disabled>Connect MetaMask</button>
-        {text}
+          <section>
+              <Navbar/>
     </section>
     <Routes>
       <Route path="/" element={<Home />} />
