@@ -6,15 +6,20 @@ import axios from "axios";
 
 
 function Timecards() {
+    const saveFile = () => {
+        saveAs(
+            "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "example.pdf"
+        );
+    };
+    const [tcnum, setTcnum] = useState('');
+    const [corHrs, setCorHrs] = useState('');
+    const [text, setText] = useState('');
 
-  const [tcnum, setTcnum] = useState('');
-  const [corHrs, setCorHrs] = useState('');
-  const [text, setText] = useState('');
-
-  const url = "http://localhost:5000/disputes";
+    const url = "http://localhost:5000/disputes";
 
 
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     const disputesubmit = { tcnum, corHrs };
 
@@ -27,59 +32,61 @@ function Timecards() {
   }
 
 
-  const saveFile2 = () => {
+    const saveFile2 = () => {
     saveAs(
       "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       "example.pdf"
     );
   };
 
-  return (
-    <div className='TimecardsClass'>
-      <Navbar />
-      <h2 className='TimecardDisplay'
-        style=
-        {
-          { width: 600, height: 400 }
-        }>
-        Your Time cards
+    return (
 
-        <button className='downloadBtnFour' onClick={saveFile2}>Open this week's timecard</button>
-        <button className='downloadBtnFive' onClick={saveFile2}>Open previous week's timecard</button>
-      </h2>
+        <div className="TimecardClass">
+            <div className="TimecardPanel">
+                <h2 className="Header">This Week's Timecard</h2>
 
-      <h2 className='DisputePanel'
-        style=
-        {
-          { width: 600, height: 150 }
-        }>
-        File a time card dispute
-        <form onSubmit={handleSubmit}>
+                <object className="TimecardViewer"
+                    data='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                    type="application/pdf"
+                    width="100%"
+                    height="100%"
+                >
+                    <iframe
+                        src='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                        width="100%"
+                        height="100%"
+                    >
+                        <p>This browser does not support PDF viewing.</p>
+                    </iframe>
+                </object>
 
-          <label>Timecard number</label>
-          <input
-            type="text"
-            required
-            value={tcnum}
-            onChange={(e) => setTcnum(e.target.value)} />
+                <button className="PrevTimecardButton" onClick={saveFile}>View Last Week's Timecard</button>
+            </div>
 
-          <label>Correct hours worked</label>
+            <div className="DisputePanel">
+                <h2 className="Header">File a Dispute</h2>
+                <form onSubmit={handleSubmit}>
+                <div>
+                    <h3 style={{ marginTop: 25 }}>Timecard number</h3>
+                <input
+                    type="text"
+                    required
+                    value={tcnum}
+                    onChange={(e) => setTcnum(e.target.value)} />
 
-          <input
-            type="text"
-            required
-            value={corHrs}
-            onChange={(e) => setCorHrs(e.target.value)} />
+                <h3>Correct hours worked</h3>
 
-          <button>Submit Dispute</button>
+                <input
+                    type="text"
+                    required
+                    value={corHrs}
+                    onChange={(e) => setCorHrs(e.target.value)} />
+                </div>
+                    <button className="DisputeButton" style={{ marginTop: 45 }}>Dispute</button>
+                </form>
 
-
-        </form>
-        
-      </h2>
-      {text}
-
-    </div>
+            </div>
+        </div>
   )
 }
 
