@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"
+import logo from "./GPLogo.png"
 
 function Navbar(){
 
@@ -8,8 +9,7 @@ function Navbar(){
         <div>
             <nav>
                 <ul>
-                    <div className="Logo"><a href="Home"><h2>GlobalPay</h2></a>
-                    </div>
+                    <img className="Logo" src={logo} alt="GlobalPay (Home)"></img>
                     <div className="Links">
                         <li><a href="Home">Home</a></li>
                         <li><a href="Account">Account</a></li>
