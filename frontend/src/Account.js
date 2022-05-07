@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import "./Account.css";
 import axios from "axios";
 import { useState } from "react";
 import Box from '@mui/material/Box';
@@ -40,53 +40,20 @@ function Account() {
         setText("successfully received all employee information"); //Access employees by index : workers[0], workers[1], etc. Access property by dot notation : workers[1].firstName 
       }, []);
 
-  return (
-    <div style={{
-      backgroundColor: 'gray',
-    }}>
-      <Navbar />
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Box sx={{ ...commonStyles, borderRadius: '16px', flex: 3, height: 500 }}>
-          <Box sx={{ ...commonStyles, borderRadius: '16px', height: 100, backgroundColor: 'blue' }}>
-            <Typography color="#fff" variant="h3" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-              Your Account Info
-            </Typography>
-          </Box>
-          {/* Mock data */}
-          <Typography color="#000" variant="h5" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-            {name}
-          </Typography>
-          <Typography color="#000" variant="h5" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-            {email}
-          </Typography>
-          <Typography color="#000" variant="h5" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-            {phone}
-          </Typography>
-          <Typography color="#000" variant="h5" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-            {text}
-          </Typography>
-          
-        </Box>
+    return (
 
-        <Box sx={{ ...commonStyles, borderRadius: '16px', flex: 1, height: 500 }}>
-          <Box sx={{ ...commonStyles, borderRadius: '16px', height: 100, backgroundColor: 'blue' }}>
-            <Typography color="#fff" variant="h3" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-              Account Help
-            </Typography>
-          </Box>
-          <Typography color="#000" variant="h5" align="center" textAlign="center" sx={{ p: 1, m: 1 }}>
-            Placeholder Text
-          </Typography>
+        <div className="AccountClass">
 
-        </Box>
+            <div className="InfoPanel">
+                <h2 className="Header">Your Account Info</h2>
+                <h3 style={{ margin: 10 }}>Information such as name, contact information, profile/employee ID, etc. will be displayed here.</h3>
+            </div>
 
-      </Box>
-
-
-
-    </div>
-
-
+            <div className="HelpPanel">
+                <h2 className="Header">Account Help</h2>
+                <h3 style={{ margin: 10 }}>Links to account support pages will be placed here.</h3>
+            </div>
+        </div>
   )
 }
 
