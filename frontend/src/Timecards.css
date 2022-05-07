@@ -1,54 +1,88 @@
-.TimecardDisplay
-{
-    background-color: blue;
+body {
+    background-color: #999999;
+}
+
+
+
+.TimecardClass .TimecardPanel {
+    float: left;
+    width: 66%;
+    margin-left: 1%;
+    border-radius: 25px;
+    background-color: white;
     text-align: center;
-    position: absolute;
-    top: 100px;
-    left: 500px;
-
+    min-height: 600px;
 }
 
-.DisputePanel
-{
-    background-color: blue;
-    text-align: left;
-    position: absolute;
-    top: 520px;
-    left: 500px;
+.TimecardClass .TimecardPanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
 }
 
-.Timecardnum
-{
-    position: absolute;
-    top: 60px;
-    left: 180px;
-
+.TimecardClass .TimecardPanel .TimecardViewer {
+    min-height: 445px;
+    width: 98%;
+    border: 2px solid #A9A9A9;
+    border-bottom: 3px solid #A9A9A9;
+    border-top: 0px;
 }
 
-.Timecardcorr
-{
-    position: absolute;
-    top: 120px;
-    left: 300px;
-
+.TimecardClass .TimecardPanel .PrevTimecardButton {
+    float: left;
+    width: 30%;
+    margin-left:35%;
+    margin-top: 1%;
+    min-height: 40px;
+    border-radius: 25px;
+    background-color: darkblue;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 0px;
+    color: white;
 }
 
-.downloadBtnFour{
 
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+
+
+.TimecardClass .DisputePanel {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    min-height: 350px;
 }
 
-.downloadBtnFive{
+.TimecardClass .DisputePanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
 
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+.TimecardClass .DisputePanel .DisputeButton {
+    float: left;
+    width: 30%;
+    margin-left:35%;
+    margin-top: 1%;
+    min-height: 40px;
+    border-radius: 25px;
+    background-color: darkblue;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 0px;
+    color: white;
 }
