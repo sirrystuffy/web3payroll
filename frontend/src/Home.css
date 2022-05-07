@@ -1,70 +1,185 @@
-
-
-.HomePageSchedule
-{
-    background-color: blue;
-    text-align: center;
-    position: absolute;
-    top: 100px;
-    left: 500px;
-
+body{
+    background-color: #999999;
 }
 
-.helpPanel
-{
-    background-color: blue;
-    text-align: center;
-    position: absolute;
-    top: 100px;
-    left: 50px;
 
 
+.HomeClass .DualPanels{
+    float: left;
+    width: 19%;
+    margin-left: 1%;
 }
 
-.quicklinksPanel
-{
-    background-color: blue;
-    text-align: center;
-    position: absolute;
-    top: 100px;
-    right: 50px; 
-}
 
-.PaymentPanel
-{
-    background-color: blue;
-    text-align: center;
-    position: absolute;
-    top: 400px;
-    right: 50px;
-}
-
-.downloadBtnOne{
-
-    height: 30px;
+.HomeClass .HelpPanel {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    float: left;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    margin-left: 1%;
+    min-height: 335px;
+}
+
+.HomeClass .HelpPanel .Header{
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius:20px;
+    background-color: darkblue;
+    color: white;
+}
+
+
+.HomeClass .QuickLinksPanel {
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    margin-left: 1%;
+    min-height: 250px;
+}
+
+.HomeClass .QuickLinksPanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.HomeClass .QuickLinksPanel a {
+    text-decoration: underline;
+    margin: 10px;
+    background-color: white;
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+
+.HomeClass .SchedulePanel {
+    float: left;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    margin-left: 2%;
+    width: 57%;
+    min-height: 600px;
+}
+
+.HomeClass .SchedulePanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.HomeClass .ScheduleViewer {
+    min-height: 450px;
+    width: 98%;
+    border: 2px solid #A9A9A9;
+    border-bottom: 3px solid #A9A9A9;
+    border-top: 0px;
+}
+
+.HomeClass .ScheduleButtons{
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 1.25%;
+}
+
+.HomeClass .ScheduleButtons ul{
+    display:table-row;
+}
+
+.HomeClass .ScheduleButtons li{
+    display: table-cell;
+    width: 20%;
+}
+
+.HomeClass .PrevSchedule {
+    display: block;
+    border-radius: 25px;
+    background-color: darkblue;
+    color: white;
+    border: 0px;
+    width: 80%;
+    font-weight: bold;
+    height: 35px;
     list-style: none;
 }
 
-.downloadBtnTwo{
-
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.HomeClass .NextSchedule {
+    display: block;
+    border-radius: 25px;
+    background-color: darkblue;
+    color: white;
+    border: 0px;
+    width: 80%;
+    font-weight: bold;
+    height: 35px;
     list-style: none;
 }
 
-.downloadBtnThree{
 
-    height: 30px;
+
+
+.HomeClass .PanelAndButton {
+    float: left;
+    width: 18%;
+    margin-left: 1.5%;
+}
+
+.HomeClass .PaymentPanel {
+    float: left;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    margin-left: 1%;
+    min-height: 500px;
+}
+
+.HomeClass .PaymentPanel .Header {
+    position: relative;
+    top: -15px;
+    height: 20%;
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.HomeClass .MetamaskButton{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    min-height: 85px;
+    border-radius: 25px;
+    background-color: darkblue;
+    font-weight: bolder;
+    font-size: 25px;
+    border: 0px;
+    color: white;
 }
