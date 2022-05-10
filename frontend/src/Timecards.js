@@ -28,6 +28,7 @@ function Timecards() {
     axios
       .post(url, disputesubmit).then(response => {
         setText(response.data);
+        console.log(response.data)
       })
   }
 
