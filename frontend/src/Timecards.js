@@ -84,7 +84,7 @@ function Timecards() {
                 </div>
                     <button className="DisputeButton" style={{ marginTop: 45 }}>Dispute</button>
                 </form>
-
+                {text}
             </div>
         </div>
   )
